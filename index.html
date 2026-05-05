@@ -6,43 +6,52 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #000; width: 100vw; height: 100vh; overflow: hidden; }
+    svg { width: 100vw; height: 100vh; }
 
-    svg {
-      width: 100vw;
-      height: 100vh;
-    }
-
-    .zone {
-      cursor: pointer;
-      fill: transparent;
-      transition: fill 0.3s;
-    }
-    .zone:hover { fill: rgba(255,255,255,0.12); }
+    .zone { cursor: pointer; fill: transparent; transition: fill 0.3s; }
+    .zone:hover { fill: rgba(255, 255, 255, 0.10); }
   </style>
 </head>
 <body>
-  <!--
-    viewBox="0 0 W H" — укажи реальные размеры твоей картинки в px
-    например 1200 1600
-  -->
-  <svg viewBox="0 0 1200 1600"
-       preserveAspectRatio="xMidYMid slice">
+  <svg viewBox="0 0 1456 816" preserveAspectRatio="xMidYMid slice">
 
     <image href="404vsMuffin-7.png"
-           width="1200" height="1600"
+           width="1456" height="816"
            preserveAspectRatio="xMidYMid slice"/>
 
-    <!-- зоны: ellipse cx/cy = центр, rx/ry = радиусы -->
-    <a href="https://github.com/skovnats-bunker">
-      <ellipse class="zone" cx="520" cy="580" rx="70" ry="50"/>
+    <!-- левый глаз (её правый) -->
+    <a href="https://ССЫЛКА-1.com" target="_blank">
+      <ellipse class="zone" cx="790" cy="285" rx="55" ry="35"/>
     </a>
 
-    <a href="https://linkedin.com/in/...">
-      <ellipse class="zone" cx="680" cy="580" rx="70" ry="50"/>
+    <!-- правый глаз (её левый) -->
+    <a href="https://ССЫЛКА-2.com" target="_blank">
+      <ellipse class="zone" cx="665" cy="295" rx="55" ry="35"/>
     </a>
 
-    <a href="https://...">
-      <ellipse class="zone" cx="600" cy="900" rx="90" ry="40"/>
+    <!-- рот -->
+    <a href="https://ССЫЛКА-3.com" target="_blank">
+      <ellipse class="zone" cx="700" cy="430" rx="65" ry="28"/>
+    </a>
+
+    <!-- badge: #МедоедГусарПлюсик -->
+    <a href="https://ССЫЛКА-4.com" target="_blank">
+      <rect class="zone" x="1130" y="425" width="290" height="68" rx="6"/>
+    </a>
+
+    <!-- badge: #Gusarstv0 -->
+    <a href="https://ССЫЛКА-5.com" target="_blank">
+      <rect class="zone" x="1130" y="503" width="290" height="68" rx="6"/>
+    </a>
+
+    <!-- badge: #404VsMuffin -->
+    <a href="https://ССЫЛКА-6.com" target="_blank">
+      <rect class="zone" x="1130" y="581" width="290" height="68" rx="6"/>
+    </a>
+
+    <!-- badge: #Memtrioshka -->
+    <a href="https://ССЫЛКА-7.com" target="_blank">
+      <rect class="zone" x="1130" y="659" width="290" height="68" rx="6"/>
     </a>
 
   </svg>
