@@ -8,8 +8,18 @@
     body { background: #000; width: 100vw; height: 100vh; overflow: hidden; }
     svg { width: 100vw; height: 100vh; }
 
-    .zone {cursor: pointer; fill: rgba(255, 255, 255, 0.08); stroke: rgba(255, 255, 255, 0.25); stroke-width: 1.5; pointer-events: all; transition: fill 0.3s, stroke 0.3s;}
-    .zone:hover {fill: rgba(255, 255, 255, 0.20);stroke: rgba(255, 255, 255, 0.60);}
+    .zone {
+      cursor: pointer;
+      fill: rgba(255, 255, 255, 0.08);
+      stroke: rgba(255, 255, 255, 0.25);
+      stroke-width: 1.5;
+      pointer-events: all;
+      transition: fill 0.3s, stroke 0.3s;
+    }
+    .zone:hover {
+      fill: rgba(255, 255, 255, 0.20);
+      stroke: rgba(255, 255, 255, 0.60);
+    }
   </style>
 </head>
 <body>
@@ -19,24 +29,24 @@
            width="1456" height="816"
            preserveAspectRatio="xMidYMid slice"/>
 
-    <!-- ⚓ Эмблема на фуражке → artiomkovnatsky.com -->
+    <!-- ⚓ Фуражка → artiomkovnatsky.com -->
     <a href="https://www.artiomkovnatsky.com/" target="_blank">
-      <ellipse class="zone" cx="1075" cy="195" rx="75" ry="65"/>
+      <ellipse class="zone" cx="905" cy="85" rx="85" ry="38"/>
     </a>
 
-    <!-- 👁️ Открытый глаз (справа для зрителя) -->
-    <a href="./Memtrioshka/">
-      <ellipse class="zone" cx="1085" cy="362" rx="80" ry="55"/>
-    </a>
-
-    <!-- 😉 Подмигивающий глаз (слева для зрителя) → Codeberg -->
+    <!-- 😉 Левый глаз (подмигивающий) → Codeberg -->
     <a href="https://codeberg.org/skovnats/SVE-Systemic-Verification-Engineering/src/branch/master/Community/%D0%9C%D0%B5%D0%B4%D0%BE%D0%B5%D0%B4%D0%93%D1%83%D1%81%D0%B0%D1%80%D0%9F%D0%BB%D1%8E%D1%81%D0%B8%D0%BA" target="_blank">
-      <ellipse class="zone" cx="935" cy="378" rx="80" ry="55"/>
+      <ellipse class="zone" cx="760" cy="355" rx="80" ry="38"/>
+    </a>
+
+    <!-- 👁️ Правый глаз (открытый) → Memtrioshka -->
+    <a href="./Memtrioshka/">
+      <ellipse class="zone" cx="955" cy="350" rx="90" ry="38"/>
     </a>
 
     <!-- 👄 Рот → X / Twitter -->
     <a href="https://x.com/ArtiomKovnatsky" target="_blank">
-      <ellipse class="zone" cx="1020" cy="512" rx="90" ry="40"/>
+      <ellipse class="zone" cx="805" cy="510" rx="90" ry="42"/>
     </a>
 
   </svg>
