@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; width: 100vw; height: 100vh; overflow: hidden; }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .zone {
+      cursor: pointer;
+      fill: transparent;
+      transition: fill 0.3s;
+    }
+    .zone:hover { fill: rgba(255,255,255,0.12); }
+  </style>
+</head>
+<body>
+  <!--
+    viewBox="0 0 W H" — укажи реальные размеры твоей картинки в px
+    например 1200 1600
+  -->
+  <svg viewBox="0 0 1200 1600"
+       preserveAspectRatio="xMidYMid slice">
+
+    <image href="404vsMuffin-7.png"
+           width="1200" height="1600"
+           preserveAspectRatio="xMidYMid slice"/>
+
+    <!-- зоны: ellipse cx/cy = центр, rx/ry = радиусы -->
+    <a href="https://github.com/skovnats-bunker">
+      <ellipse class="zone" cx="520" cy="580" rx="70" ry="50"/>
+    </a>
+
+    <a href="https://linkedin.com/in/...">
+      <ellipse class="zone" cx="680" cy="580" rx="70" ry="50"/>
+    </a>
+
+    <a href="https://...">
+      <ellipse class="zone" cx="600" cy="900" rx="90" ry="40"/>
+    </a>
+
+  </svg>
+</body>
+</html>
